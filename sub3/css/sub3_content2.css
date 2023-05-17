@@ -1,0 +1,67 @@
+/* 신기술 내용 영역 */
+
+/* 공통영역 */
+#content section{margin-bottom: 200px;}
+#content h3{font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 28px;
+    color:#0c4da2; border-bottom:1px solid #ccc; padding-bottom: 30px; 
+    text-align: center;}
+
+/* ESD 에너지 저감 장치 */
+#content .esd h3{text-align: center; }
+#content .esd img{border-radius: 10%;}
+#content .esd ul{overflow: hidden; margin-top: 50px;}
+#content .esd li{float: left; margin-left: 75px; position: relative;}
+#content .esd li:nth-child(1){margin-left: 0;}
+#content .esd li p{font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 25px;
+    color:#fff; position: absolute; width:350px; height: 30px; top:50%; margin-top: -15px;
+    text-align: center; opacity: 0; transition: all .5s ease-out;} 
+#content .esd img{transition: all .5s ease-out;}
+#content .esd li:hover img{filter:brightness(40%);}
+#content .esd li:hover p{opacity: 1;}
+
+
+/* LNG VALUE CHAIN */
+#content .lng h3{text-align: center;}
+#content .lng .list{overflow: hidden; padding-top: 40px;}
+#content .lng .list li{float: left; width: 200px; text-align: center;
+    font-family: 'Roboto', sans-serif; font-weight: 400;
+    font-size: 18px; color: #333; transition: all .5s ease;}
+#content .lng .list li:hover{transform: scale(1.1);}
+#content .lng .list li::after{content: ''; display: block; width: 8px;
+    height: 8px;border-radius: 50%; background: #0c4da2;position: absolute;
+    right: 98px; top: -20px; transition: all .5s ease;}
+#content .lng .list li:hover::after{transform: translateY(-8px);}
+
+
+/* 친환경 전력시스템 */
+#content .friendly ul{overflow: hidden; margin-top: 50px; padding-bottom: 7px;}
+#content .friendly li{float: left; position: relative; margin: 0 25px;}
+#content .friendly img{filter: brightness(85%); transition: all .5s ease;}
+#content .friendly li::before{content: ''; display: block; width: 549px; height: 5px;
+    background: #0c4da2; position: absolute; bottom:-8px; left: 0;
+    opacity: 0; transition: all .5s ease;}
+#content .friendly dl{width: 550px; height: 190px; position: absolute; bottom: -135px; right: 0;
+    transition: all .5s ease;}
+#content .friendly li:hover dl{bottom:0;}
+#content .friendly li:hover img{filter: brightness(30%);}
+#content .friendly li:hover::before{opacity: 1;}
+#content .friendly dt{font-family: 'Noto Sans KR', sans-serif; font-weight:500; 
+    font-size: 25px; color:#fff; margin-left: 30px;}
+#content .friendly dd{font-family: 'Noto Sans KR', sans-serif; font-weight:300; 
+    font-size: 16px; color:#fff; text-align: justify;
+    margin:30px;}    
+
+
+/* ENGINEERING */
+#content .engine ul{position: relative;}
+#content .engine img{position:relative; width: 500px;
+    height: 100%; top:0; left:50%; margin-left: -250px; margin-top: 50px;}
+#content .engine dt{font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 1.5em;
+    color:#333; text-align: center; margin-top: 20px;}
+#content .engine dd{font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 1em;
+    color:#666; margin-top: 30px; text-align: center; line-height: 1.5em;
+    letter-spacing: .01em;}
+#content .engine i{font-size: 30px; color: #333; opacity: .7;}
+#content .btn{position: relative;}
+#content .engine .left{position: absolute; top: -400px; left: 200px;}
+#content .engine .right{position: absolute; top: -400px; right: 200px;}

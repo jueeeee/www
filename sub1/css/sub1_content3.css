@@ -1,0 +1,51 @@
+/* 주요연혁 내용 영역 */
+
+/* tab_menu */
+#content .tab_menu ul{width: 1200px; border:1px solid #ccc; overflow: hidden;}
+#content .tab_menu li{width:300px; float: left; box-sizing: border-box; background: #fff; transition: all .5s ease;}
+#content .tab_menu li a{font-size: 16px; color:#666; text-align: center; padding: 15px;}
+#content .tab_menu li:nth-child(1){border-right: 1px solid #ccc;}
+#content .tab_menu li:nth-child(2){border-right: 1px solid #ccc;}
+#content .tab_menu li:nth-child(3){border-right: 1px solid #ccc;}
+
+/* sticky menu */
+#content .navOn .tab_menu ul{margin: 0 auto;}
+.navOn{position: fixed; width: 100%; z-index:60; left:0; top: 0; background: #ccc;}
+
+#content .tab_box ul li a{display: block; font-weight: bold; background: #f8f8f8; padding: 10px 0; transition: all .3s ease}
+#content .tab_box ul li a.spy{background: #0c4da2; color:#fff;}
+
+
+/* section .box */
+#content .box{width: 2000px; height: 300px; position: relative; top: 0; left: 50%;
+                    margin-left: -1000px; margin-top: 100px;}
+#content .main1{background: url(../images/content3/1.jpg) center fixed no-repeat;}
+#content .main2{background: url(../images/content3/2.jpg) center fixed no-repeat;}
+#content .main3{background: url(../images/content3/3.jpg) center fixed no-repeat;}
+#content .main4{background: url(../images/content3/4.jpg) center fixed no-repeat;}
+
+#content .box h3{font-weight:700; font-size: 45px; color: #fff; letter-spacing: .2em;}
+#content .box p{font-size: 20px; color: #fff;} 
+
+#content .main1 h3, .main3 h3{position: absolute; left: 430px; bottom: 140px;}
+#content .main1 p, .main3 p{position: absolute; left: 430px; bottom: 90px;}
+#content .main2 h3, .main4 h3{position: absolute; left: 430px; bottom: 140px;}
+#content .main2 p, .main4 p{position: absolute; left: 430px; bottom: 90px;}
+
+/* list */
+#content .list{position: relative; margin-top: 50px;}
+#content .list::before{content: ""; display: block; width: 1px; height: 101%; 
+                           background: #999; position: absolute; top :0; left: 50%; margin-left: -200px;}
+
+#content .list dl{overflow: hidden; padding-top: 20px;}
+#content .list dt{font-weight: 700; font-size: 45px; color: #666; float: left; position: relative; left:180px;}
+#content .list dt::after{content: ''; display: block; width: 7px; height: 7px;
+                        border-radius: 50%; background: #fff; position: absolute;
+                        left: 212px; top: 20px; border: 5px solid #0c4da2;}
+
+#content .list dd{width: 700px; margin:30px 0 0 460px; position: relative; }
+#content .list dd:last-of-type{border-bottom: 1px dashed #ccc; padding-bottom: 40px;}
+#content .list dd span{font-weight:700; font-size: 14px; color: #0c4da2; margin-left: 40px;}
+#content .list dd p{font-size: 19px; color: #666; margin: 15px 0 0 50px;}
+
+  

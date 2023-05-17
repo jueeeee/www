@@ -1,0 +1,60 @@
+/* 윤리경영 내용 영역 */
+
+/* 공통 */
+#content h3{font-family: 'Noto Sans KR', sans-serif; font-weight:700; 
+    font-size: 25px; color:#333; letter-spacing: -.5px;}
+#content p{font-family: 'Noto Sans KR', sans-serif; font-weight:400; text-align: justify;
+    font-size: 18px; color:#333; letter-spacing: -.5px;
+    line-height: 2em;}
+
+/* main1 */
+#content .main1{position: relative;}
+#content .main1 h3{margin-top: 0;}
+#content .main1 p{margin-top: 30px;}
+#content .main1 .background{position: relative;}
+#content .main1 ul{padding-top: 80px;}
+#content .main1 ul::before{content:''; display: block;
+    width:1200px; height: 800px; background: #f8f8f8; position: absolute;
+    top:50px; left: 0;}
+#content .main1 li{margin: 100px 100px 0 150px; position: relative;}
+#content .main1 li p{margin-top: 10px; color:#333; font-weight: 500;}
+#content .main1 span{font-family: 'Noto Sans KR', sans-serif; font-weight:700; 
+    font-size: 80px; color:#ccc; position: absolute; bottom:20px; left:-60px;
+    z-index: -10o; color: #0c4da2; opacity: .3;}
+
+/* main2 */
+#content .main2 h3{margin-top: 150px;}
+#content .main2 p{margin-top: 10px; text-align: center;}
+#content .main2 i{color:#0c4da2; font-size: 45px; }
+#content .main2 ul{position: relative; height: 300px; width: 100%;}
+#content .main2 li{float: left; text-align: center; width:170px;}
+#content .main2 li:nth-child(even){position: relative; top:50px; left: 0px;}
+#content .main2 li:nth-child(odd){position: relative; top:170px; left: 0px;}
+
+/* main3 */
+#content .main3 h3{margin-top: 70px;}
+#content .main3 ul{overflow: hidden; margin-top: 80px;}
+#content .main3 li{width: 500px; float: left; box-sizing: border-box;
+    margin-left: 68px;}
+#content .main3 dl{position: relative;}
+#content .main3 dt{font-family: 'Noto Sans KR', sans-serif; font-weight:500; 
+    font-size: 20px; color:#333; margin-bottom: 25px;}
+#content .main3 dt::before{content: ''; width: 3px; height: 13px; display: block;
+    position: absolute; top:8px; left: -13px; background: #0c4da2;
+    transform: rotate(30deg);}
+#content .main3 dd{font-family: 'Noto Sans KR', sans-serif; font-weight:400; 
+    font-size: 16px; color:#333; height: 70px;
+    margin-top: 15px; text-align: justify;}
+    
+
+
+/* main4 */
+#content .main4 h3{margin-top: 80px;}
+#content .main4 dl{margin-top: 50px; position: relative;}
+#content .main4 dt{font-family: 'Noto Sans KR', sans-serif; font-weight:500; 
+    font-size: 20px; color:#333; margin-bottom: 25px; margin-left: 15px;}
+#content .main4 dt::before{content: ''; width: 3px; height: 13px; display: block;
+    position: absolute; top:8px; left: 0; background: #0c4da2;
+    transform: rotate(30deg);}
+#content .main4 dd{font-family: 'Noto Sans KR', sans-serif; font-weight:400; 
+    font-size: 16px; color:#333; line-height: 2.3em;}

@@ -1,0 +1,24 @@
+/* 공통 */
+.title{font-family: 'Noto Sans KR', sans-serif; font-weight:400;
+    font-size: 1.5em; color:#666; margin: 50px 0; text-align: center; padding: 30px;
+    border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;}
+.sub_title{font-family: 'Noto Sans KR', sans-serif; font-weight:500; 
+    font-size: 1.3em; color:#333; letter-spacing: -.5px; margin-left: 45px;
+    position: relative;}
+.sub_title::before{content: ''; width: 3px; height: 11px; display: block;
+    position: absolute; top:9px; left: -17px; background: #0c4da2;
+    transform: rotate(30deg);}
+.sub_text{font-family: 'Noto Sans KR', sans-serif; font-weight:400; text-align: justify;
+    font-size: 16px; color:#666; letter-spacing: -.5px; margin: 20px 45px 40px;
+    line-height: 1.8em;}
+
+/* box1 */
+#box1 .group1 li{font-family: 'Noto Sans KR', sans-serif; font-weight:400;
+    font-size: 1.2em; color:#0c4da2; border: 1px solid #ccc;
+    width: 200px; padding: 5px; text-align: center;}
+
+
+
+
+    
+   

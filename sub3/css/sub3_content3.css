@@ -1,0 +1,33 @@
+/* 연구소소개 내용 영역 */
+
+/* intro */
+#content section{margin-top: 80px;}
+#content .intro{position: relative; margin-top: 30px;}
+#content .intro::before{content: ''; display: block; width: 2000px; 
+    height:400px; position: absolute; top:-150px; left:50%; margin-left: -1000px;
+    background: #f5f5f5; z-index: -10;}
+#content .intro::after{content: ''; display: block; clear: both;}
+#content .intro img{float: left; margin-left: 20px; 
+     border-radius: 5%; margin-top: 60px;}
+#content h3{font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 30px;
+    color:#0c4da2 ; text-align: center;}
+#content .intro p{font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 16px;
+    color:#333; text-align: center;}
+
+/* main */
+#content .main{margin-top:170px;}
+#content .main li{margin-bottom: 50px; position: relative;}
+#content .main li::before{content: ''; display: block; width: 2000px; 
+    height:280px; position: absolute; top:90px; left:50%; margin-left: -1000px;
+    background: #f5f5f5; z-index: -10;}
+#content .main li::after{content: ''; display: block; clear: both;}
+#content .main img{float: right; border-radius: 0; 
+    transform: scale(1); transition: all .5s ease; overflow: hidden;}
+#content .main li:hover img{transform: scale(1.05) rotate(.001deg);}
+#content .main li:nth-child(even) img{float: left;}
+#content .main dl{width:50%; padding:140px 90px; float:left; box-sizing: border-box;} 
+#content .main li:nth-child(even) dl{float: right;}
+#content .main dt{font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 28px;
+    color:#333; letter-spacing: -.5px;}
+#content .main dd{font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 16px;
+    color:#666; margin-top: 20px; letter-spacing: .2px;}

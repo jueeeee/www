@@ -1,0 +1,30 @@
+/* 공통영역*/
+#content h3{font-weight:700; font-size: 30px; margin: 50px 0;}
+#content .first{margin-top: 0;}
+
+/* 채용절차 */
+.main1 .step{overflow: hidden; margin-top: 50px;}
+.main1 .step li{width: 190px; height: 190px; border-radius: 500px; box-sizing: border-box; float: left; margin: 0 -10px; padding: 2px; background: linear-gradient(0deg, #0c4da2 50%, #999 50%); position: relative;}
+.main1 .step li:nth-of-type(1){margin: 0 -10px 0 0;}
+.main1 .step li:nth-of-type(6){margin-left: 90px; background: #0c4da2;}
+.main1 .step li:nth-of-type(6)::before{content: ''; display: block; width: 80px; height: 3px; border-bottom: 0.11em dashed #999; position: absolute; top: 93px; left: -80px;}
+.main1 .step li p{font-size: 1.1em; font-weight: 500; color: #666; width: 100%; height: 100%; background: #fff; border-radius: 500px; box-sizing: border-box; padding: 60px 28px;}
+.main1 .step li span{display: block; font-size: .9em; font-weight: 500; margin-top: 5px; color: #0c4da2;}
+
+.main1 ul{margin-top: 50px;}
+.main1 ul li{margin-top: 20px;}
+.main1 ul li span{font-size: 1.2em; font-weight: 500; color: #0c4da2;}
+.main1 ul li p{margin-top: 10px;}
+.main1 ul li p a{display: inline-block;}
+
+/* 직무소개 */
+table{border-top: 1px solid #333; border-bottom: 1px solid #333;}
+table .title{border-bottom: 1px solid #ccc;}
+
+table tr{height: 55px;}
+table tr:nth-child(6){height: 80px;}
+table tr:nth-child(7){border-top: 1px solid #ccc;}
+
+table tr td{padding-left: 15px;}
+table tr td:nth-child(1){background: #f1f1f1;}
+table tr td:nth-child(1), td:nth-child(2){width: 10%;}

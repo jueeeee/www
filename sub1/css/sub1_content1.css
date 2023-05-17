@@ -1,0 +1,116 @@
+
+/* 공통 */
+#content {font-family: 'Noto Sans KR', sans-serif;}
+
+/* 기업정보 메인 */
+#content .main{margin-bottom: 100px;}
+
+#content .main li{
+    overflow: hidden; 
+    margin-bottom: 70px;}
+
+#content .main li img{
+    float: left;
+    transform: scale(1); 
+    transition: all .5s ease-out;}
+
+#content .main li:nth-child(even) img{
+    float: right;}
+
+#content .main li:hover img{
+    transform: scale(1.05) rotate(.001deg);}
+
+#content .main dl{
+    float: right; 
+    width: 410px; 
+    padding: 50px 30px 50px 60px;
+    box-sizing: border-box;
+    text-align: justify;}
+
+#content .main li:nth-child(even) dl{
+    float: left;
+    padding: 50px 60px 50px 20px;}
+
+#content .main dt{
+    font-weight:500;
+    font-size: 1.55em;
+    color: #333;
+    letter-spacing: -.5px;}
+
+#content .main dd{
+    font-weight:400;
+    font-size: 1em; 
+    color:#666;
+    margin-top: 20px;}
+
+
+/* 기업개요 */
+#content .summary{
+    width: 2000px; 
+    position: relative; 
+    top:0;
+    left:50%; 
+    margin-left: -1000px;
+    background: url(../images/content1/summary.jpg);
+    filter: brightness(.7);}
+
+#content .summary .inner{
+    width: 1200px; 
+    margin: 0 auto; 
+    padding: 80px;}
+
+#content .summary h3{
+    font-weight:700;
+    font-size: 1.8em; 
+    color:#333; 
+    margin-bottom: 40px;
+    letter-spacing: -.8px;}
+
+#content .summary ul{overflow: hidden;}
+
+#content .summary li{
+    float:left; 
+    border: 1px solid #333; 
+    width: 195px; 
+    height: 180px;
+    margin-right: 6px; 
+    box-sizing: border-box; 
+    position: relative;}
+
+#content .summary li:last-child{margin-right: 0;}
+
+#content .summary i{
+    font-size: 2.9em;
+    color: #333;
+    position: absolute; 
+    top:40px;
+    left: 79px;}
+
+#content .summary li:nth-child(2) i{left: 76px;}
+#content .summary li:nth-child(3) i{left: 75.5px;}
+#content .summary li:nth-child(4) i{left: 68px;}
+#content .summary li:nth-child(5) i{left: 68px;}
+
+#content .summary p{text-align: center;}
+
+#content .summary .top{
+    font-weight:400;
+    font-size: 1.2em; 
+    color:#333;
+    margin-top: 100px;}
+
+#content .summary .bottom{
+    font-weight:300;
+    font-size: 1em; 
+    color:#666;}
+
+    
+/* SCROLL */
+.main, .inner{visibility: hidden;}
+.fadeInDown, .fadeInLeft, .fadeInRight, .fadeInUp , .slideInLeft, .rollIn{ visibility: visible; }
+.delay-01s { animation-delay: 0.1s;}
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-05s { animation-delay: 0.5s;}
+.delay-06s { animation-delay: 0.6s;}  

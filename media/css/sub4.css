@@ -1,0 +1,44 @@
+.videoBox h2{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); font-family: 'looks_happy'; font-size: 5em; color: #fff;}
+#imgBG{display: block;}
+#content{position: relative; color: #fff; width: 100%; background: rgba(0,0,0,.8); padding: 5% 0;}
+#content h3{font-family: 'looks_happy'; font-size: 3em; text-align: center;}
+
+#content section{margin: 5%;}
+
+#content .intro{margin-bottom: 5%}
+#content .intro img{width: 30%; display: block; margin-bottom: 3%;}
+
+#content ul{column-count:4;}
+#content ul li {position: relative; display: inline-block; margin: 0 0 2%; width: 102%; box-sizing: border-box;  transition: all .3s;}
+#content ul li img{width: 100%; transition: all .3s;}
+#content ul li div{position: absolute; bottom: 18px; left: 5.5%; font-size: .9rem; opacity: 0; transition: all .3s;}
+#content ul li span{display: block; letter-spacing: 0.03em;}
+
+#content ul:hover li{filter: brightness(.5);}
+#content ul li:hover{filter: brightness(1);}
+#content ul li:hover img{scale: .98;}
+#content ul li:hover div{opacity: 1;}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content .intro img{width: 50%;}
+}
+
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+    #content ul{column-count:3;}
+    #content ul li div{position: relative; opacity: 1;}
+    
+}
+
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+    #content ul{column-count:2;}  
+    #content .inrto p{font-size: .8em;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #content ul{column-count:1;}
+    #content .intro img{width: 60%;}
+}

@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* CSS Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 400; color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none; display: block;}
+img{border: 0; vertical-align: top}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 4}
+
+.hidden{display: block; position: absolute;
+ left: -1000%; width: 1px; height: 1px;
+  overflow: hidden; color: #fff}
+
+/*
+font-family: 'Noto Sans KR', sans-serif; font-weight:300;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* 전체공통영역 */
+#skipNav{position:relative; width:100%; overflow:hidden; z-index: 110;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:1.2em; font-weight: bold;}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{display:block; height:auto; padding:15px 0; background:#fff;}
+
+#wrap{width: 100%; overflow: hidden;}
+
+/* 헤더영역 */
+#headerArea{width: 100%; height: 130px; position: fixed; left: 0; top: 0; z-index: 100; background: rgba(255,255,255,0); transition: background .5s;}
+#headerArea .header_inner{width: 1200px; margin: 0 auto;}
+
+/* 글로벌 네비게이션 */
+#headerArea .logo{width: 102px; height: 75px; margin: 35px 0 0 0; float: left;}
+#headerArea .logo a{width: 102px; height: 75px; background:url(../images/logo_hedaer.png); text-indent: -999px; overflow: hidden;}
+
+#headerArea #gnb{float: left;}
+#headerArea #gnb .dropdownmenu{width:100%;}
+#headerArea #gnb .dropdownmenu::after{content: ''; display: block; clear: both;}
+#headerArea #gnb .dropdownmenu .menu{float: left; font-size: 20px; position: relative; left:30px; width:155px;}
+#headerArea #gnb .dropdownmenu .menu::after{content: ''; display: block; position: absolute; top: 128px; left: 0; width: 100%; height: 1px; background: #0c4da2; opacity: 0; transition:all .3s ease-out; transition-property: top, opacity;}
+#headerArea #gnb .dropdownmenu .menu:hover::after{opacity: 1} 
+#headerArea #gnb .dropdownmenu .menu .depth1{display: block; color: #fff; font-weight: 500; text-align: center; padding:79px 0 0 0; transition: all .5s;}
+  
+/* 2depth */
+#headerArea #gnb .dropdownmenu li ul{width:100%; height: 170px; position: absolute; top:128px; left:0; line-height: 2em; padding-top: 15px; display: none;}
+#headerArea #gnb .dropdownmenu li ul li{text-align: center; font-family: 'Noto Sans KR', sans-serif;}
+#headerArea #gnb .dropdownmenu li ul li a{display: block; color: #333; font-size: .9em; transition: all .1s ease;}
+#headerArea #gnb .dropdownmenu li ul li:hover a{color: #0c4da2; font-weight: bold; }
+
+#headerArea .top_menu{overflow: hidden; float:right; margin-top:88px; z-index: 100; }
+#headerArea .top_menu li{float:left; font-size: 14px; margin-right: 25px;}
+#headerArea .top_menu li a{color:#fff;}
+#headerArea .top_menu li:last-child{margin-right: 0;}
+
+/* 푸터영역 */
+#footerArea{width: 100%; height:200px; margin-top: 100px; border-top: 1px solid #999;}
+#footerArea .footer_inner{width: 1200px;  margin: 0 auto;  position: relative;}
+#footerArea .footer_inner::after{content: ''; display: block; clear: both;}
+#footerArea .footer_inner img{ float:left;}
+#footerArea .footer_inner .fnb{overflow: hidden; margin-left: 170px; margin-top: 60px;}
+#footerArea .footer_inner .fnb li{float: left; font-family: 'Noto Sans KR', sans-serif; font-weight:400; 
+    font-size: 16px; color:#333; margin-right:50px; position: relative;}
+#footerArea .footer_inner .fnb li::after {content: ''; display: block; width: 1px; height: 12px; background: #333;
+    position: absolute; right: -27px; top: 7px;}
+    #footerArea .footer_inner .fnb li:last-child:after{content: ''; display: none;}
+#footerArea .footer_inner .info{margin-left: 170px; margin-top:20px; overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif; font-weight:300; font-size: 16px; color: #666;}
+#footerArea .footer_inner .info p{float: left; margin-right: 30px; }
+
+/* 패밀리사이트 */
+#footerArea .family{width: 185px; height: 30px; background: #f0f0f0; position: absolute;
+  right: 0px; bottom: 0px; padding-left: 10px; padding-top: 5px; transition: all .3s linear;}
+#footerArea .family .arrow{display: block; font-size: 1em; padding-top: 1px; 
+  margin-left: 20px; font-family: 'Roboto', sans-serif; color: #333;}
+#footerArea .family .arrow i{font-size: 1em; color: #333; margin-left: 30px;}
+#footerArea .family:hover{background: #666;}
+#footerArea .family:hover a{ color: #fff;}
+#footerArea .family:hover i{ color: #fff;}
+
+#footerArea .family .aList{ position:absolute; top:-272px; left:0px; width:195px;
+ display:none; background: #f0f0f0;}
+#footerArea .family .aList li a{ font-family: 'Noto Sans KR', sans-serif; 
+  font-weight:400; font-size: 1em; color:#333 ;display:block; ;
+  text-align: left; transition: all .3s ease; height:35px; padding-left: 15px;
+  padding-top: 10px;}
+#footerArea .family .aList li a:hover{ background:#666; color:#fff;}
+
+/* top */
+#footerArea .topMove{display:block; width: 50px; height: 50px; background: #0c4da2; 
+  border-radius: 50%; position: fixed; left:50%; margin-left: 700px; 
+  bottom:50px;}
+#footerArea .topMove i{font-size: 1em; position: fixed; bottom:67px; left:50%; margin-left: 717px; color: #fff;}
+
+
+
+
+
+
+
+
+

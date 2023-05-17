@@ -1,0 +1,322 @@
+/* 와이드 pc  */	
+#content{width:95%; margin:0 2.5%; height:100%; background:rgba(0,0,0,.7)}
+
+@keyframes updown {
+   0% { transform:translateY(0);}
+   50% { transform:translateY(20px);}
+   100% { transform:translateY(0);}
+}
+
+@keyframes rotate_image{100% {transform: rotate(360deg);}}
+
+@keyframes ani {
+   0% { transform: rotate(0);}
+   100% { transform:rotate(20deg);}
+}
+
+@keyframes ani2 {
+   0% { transform: rotate(20deg);}
+   100% { transform:rotate(0);}
+}
+
+/* 뉴진스 영역 */
+
+   .about{background: #fff; padding: 150px 0;}
+
+   .about .box{padding: 0 100px 100px; position: relative}
+   .about .box img{position: relative; top: 0; left: 50%; margin-left: -310px}
+   .about .box p{text-align: center;}
+   
+   .about ul{display: flex; padding: 0 100px; position: relative;}
+   .about ul:nth-of-type(2){justify-content: center; margin-top: 25px}
+   .about ul li{width: 33.33%; border: 1px solid #333; margin-left: 25px; position: relative;}
+   .about ul .left{margin-left: 0}
+   .about ul li a>img{width: 94%; margin: 3% 3% 0; transition: all .3s ease-in;}
+   .about ul li a>span{font-family: 'looks_happy'; font-size: 1.7em; display: block; margin: 20px 25px 15px; transition: all .3s ease-in;}
+
+   .about ul div{position: absolute; bottom:-120px; left: 0; width: 100%; text-align: center; transition: all .3s ease-in; opacity: 0;}
+   .about ul div span{display: block;}
+
+   .about .tab1 li:nth-of-type(1)::after{ background: url(../images/minjicard.png) no-repeat; background-size:contain}
+   .about .tab1 li:nth-of-type(2)::after{ background: url(../images/hanicard.png) no-repeat; background-size:contain}
+   .about .tab1 li:nth-of-type(3)::after{ background: url(../images/danielcard.png) no-repeat; background-size:contain}
+   .about .tab2 li:nth-of-type(1)::after{ background: url(../images/haerincard.png) no-repeat; background-size:contain}
+   .about .tab2 li:nth-of-type(2)::after{ background: url(../images/hyeincard.png) no-repeat; background-size:contain}
+   
+   .about li::after{content: ''; position: absolute; top: 0; left: 22%; width: 75%; height: 75%; opacity: 0; transition: all .3s ease-in; animation:updown 1s infinite alternate}
+   .about li:hover::after{opacity: 1;}
+   .about li:hover img{opacity: 0;}
+   .about li:hover a>span{opacity: 0;}
+   .about li:hover a div{bottom: 5%; opacity: 1;}
+
+   .about .tab3{display: grid; grid-template-columns: repeat(3,1fr);
+   
+      grid-template-areas: 
+       'a a b'
+       'c d d'
+       'e e f'
+       'g h h'
+       'i i j';
+   } 
+   .about .tab3 img{width: 100%; height: 100%; object-fit: cover}
+
+   .im1{grid-area: a;}
+   .tx1{grid-area: b;}
+   .tx2{grid-area: c;}
+   .im2{grid-area: d;}
+   .im3{grid-area: e;}
+   .tx3{grid-area: f;}
+   .tx4{grid-area: g;}
+   .im4{grid-area: h;}
+   .im5{grid-area: i;}
+   .tx5{grid-area: j;}
+
+   .about .text{padding: 70% 0 0 15%; font-weight: 500;}
+   .about .text span{display: block}
+   .about .text strong{font-family: 'looks_happy'; display: block; font-size: 1.7em; margin-bottom: 2%}
+
+
+/* 앨범 영역 */
+
+   .album{background: #fff; position: relative; height: 1400px;}
+
+   .album .title_box img{width: 100%; height:750px; object-fit: cover; object-position: center; filter: brightness(.6)}
+   .album .title_box h3{font-family: 'looks_happy'; font-size: 4.5em; color: #fff; position: absolute; top:230px; left: 50%; margin-left: -139px;}
+   .album .title_box a{color: #fff; position: absolute; top:300px; border-color: #fff;}
+
+   .album ul{display: flex; position: relative; top:-280px; margin: 0 50px;}
+   .album ul li{flex-basis: 33.33%; padding: 20px; overflow: hidden;}
+   .album ul li img{width:98%; filter: drop-shadow(1px 2px 10px rgba(0,0,0,.7)); transition: all .3s}
+   .album ul li img:hover{animation: rotate_image 8s linear infinite}
+   .album ul li a{background: url(../images/discbtn.png) no-repeat; display: block; width: 75px; height: 80px; text-indent: -9999px; float: right;}
+
+   .album dl{margin: 30px 50px 30px 30px}
+   .album dl dt{font-family: 'looks_happy'; font-size: 2em;}
+   .album dl strong{display: block; margin-top: 20px;}
+   .album dl dd{margin-top: 10px}
+
+/* 컨텐츠 영역 */
+
+   .contents{padding: 100px 80px}
+   .contents img{border-radius: 30px}
+   .contents h3{font-family: 'looks_happy'; font-size: 4.5em; color: #fff; margin-bottom: 50px}
+
+   .contents_box{position: relative; display: grid; grid-template-columns: repeat(9,1fr); grid-gap: 30px; 
+
+      grid-template-areas: 
+             'a a a a a b b b b'
+             'c c c d d d e e e';
+   }
+
+   .contents_box div:nth-child(1){grid-area: a}
+   .contents_box div:nth-child(2){grid-area: b}
+   .contents_box div:nth-child(3){grid-area: c}
+   .contents_box div:nth-child(4){grid-area: d}
+   .contents_box div:nth-child(5){grid-area: e}
+
+   .contents .img_box>img{width: 100%; transition: all .3s ease-in}
+   .contents .img_box a img{position: absolute; top:42.5%; left: 50%; margin-left: -42px; width: 70px; height: 64px; border-radius: 0; opacity: 0; transition: all .3s ease-in; animation: ani2 1s infinite alternate}
+   .contents .img_box:hover img{filter: drop-shadow(0px 0px 15px #fff);}
+   .contents .img_box:hover a img{opacity: 1}
+
+   .contents .text_box{color: #fff; text-align: center; padding: 2vw 3vw 0}
+   .contents .text_box img{width: 80%}
+   .contents .text_box p{margin-top: 2vw}
+   .contents .text_box a{color: #fff; border-color: #fff}
+
+   .contents .bottom_line{position: relative;}
+   .contents .bottom_line img{width: 100%; transition: all .2s ease-in} 
+   .contents .bottom_line dl{text-align: center; color:#fff; margin-top: 20px}
+   .contents .bottom_line dd{font-family: 'looks_happy_fill'; font-size: 1.5em; margin-top: 10px}
+   .contents .bottom_line a img{position: absolute; bottom: 16%; right: 0; width: 70px; height: 64px; border-radius: 0; opacity: 0; transition: all .3s ease-in; animation:ani2 1s infinite alternate}
+   .contents .bottom_line:hover img{filter: drop-shadow(0px 0px 20px #fff);}
+   .contents .bottom_line:hover a img{opacity: 1}
+
+
+/* rabbit move */
+
+   .rabbit{transform: translateX(10%); transition: all 7s}
+   .rabbit.on{transform: translateX(-30%)}
+   .rabbit ul::after{content: ''; display: block; clear: both}
+   .rabbit li{width: 17%; float: right; margin-left: -4%}
+   .rabbit li:nth-of-type(odd) img{width: 100%; animation:ani .7s linear infinite alternate}  
+   .rabbit li:nth-of-type(even) img{width: 100%; animation:ani2 .7s linear infinite alternate}
+   
+/* 갤러리 영역 */
+
+   .gallery{padding: 100px 50px; color:#fff}
+   .gallery a{border-color: #fff; color:#fff}
+   .gallery h3{font-family: 'looks_happy'; font-size: 4.5em; text-align: center;}
+   .gallery_box{display: grid; grid-template-columns: repeat(4,1fr);
+   
+            grid-template-areas: 
+             'a a b c'
+             'd e e f'
+             'g g h f';
+   } 
+   .gallery_box img{width: 100%; height: 100%; object-fit: cover; transition: all .5s;}
+
+   .img1{grid-area: a;}
+   .img2{grid-area: b;}
+   .img3{grid-area: c;}
+   .img4{grid-area: d;}
+   .img5{grid-area: e;}
+   .img6{grid-area: f;}
+   .img7{grid-area: g;}
+   .img8{grid-area: h;}
+
+   .gallery_box img:hover{filter: brightness(.8) hue-rotate(304deg); transform: scale(0.98)}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	#content{width:96%; margin:0 2%; font-size: 16px;}
+
+   /* 뉴진스 영역 */
+   .about li:hover a div{bottom: 3%}
+
+
+   /* 앨범 영역 */
+   
+   .album .title_box h3{top: 180px;}
+   .album .title_box a{top: 280px;}
+   .album .title_box img{height: 620px;}
+
+   .album ul{top: -200px; margin: 0 30px;}
+   .album ul li a{background-size: 63px 68px; margin-top: 15px;}
+   .album dl{margin-top: 35px;} 
+
+   /* 컨텐츠 영역 */
+   .contents{padding: 100px 60px}
+
+   /* rabbit move */
+
+   /* 갤러리 영역 */
+   .gallery{padding: 60px 60px}
+}
+
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+   #content{width:auto; margin:0}
+   #content h3{font-size: 4em;}
+
+   /* 뉴진스 영역 */
+
+   /* 앨범 영역 */
+   .album{height: 1200px}
+
+   .album .title_box h3{top: 150px; margin-left: -110px}
+   .album .title_box a{top: 220px}
+   .album .title_box img{height: 500px}
+
+   .album ul{top: -150px}
+   .album ul li{position: relative; text-align: center}
+   .album ul li a{background-size: 53px 58px; float: none; position: absolute; top:370px; left: 42%}
+
+   .album dl{margin: 30px 30px}
+   .album dl strong{margin-top: 100px;}
+   .album dd{overflow: hidden; height: 265px; text-overflow: ellipsis; /* white-space: nowrap */}
+  
+   /* 컨텐츠 영역 */
+   .contents{padding:100px 30px}
+   .contents h3{text-align: center}
+   .contents_box{display: block}
+   
+   .contents .img_box{margin: 0 100px}
+   .contents .text_box{margin: 0 80px}
+   .contents .text_box img{width: 40%}
+
+   .contents .bottom_line{width: 32%; float: left; margin-left: 2%}
+   .contents div:nth-child(3){margin-left: 0}
+   
+   /* rabbit move */
+   .move{margin-top: 23%}
+   .rabbit{transform: translateX(-30%)}
+
+   /* 갤러리 영역 */
+   .gallery_box{grid-template-columns: repeat(3,1fr);
+   
+      grid-template-areas: 
+       'a a b'
+       'f e e'
+       'f c d'
+       'g g h';
+}
+}
+
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+	
+   /* 앨범 영역 */
+   .album{height: 1400px}
+
+   .album .title_box h3{top:110px}
+   .album .title_box img{height: 350px}
+   .album .title_box a{top: 180px}
+
+   .album ul{display: block; margin: 30px; top: 0}
+   .album ul li{text-align: left}
+   .album ul li img{float: left; width: 40%}
+   .album ul li a{top:8%; left: 88%}
+
+   .album dl{margin: 5% 0 0 48%}
+   .album dl strong{margin-top:3%}
+   .album dl dd{margin-top: 10px; font-size: .8rem; height: auto; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; text-overflow: ellipsis; overflow: hidden;}
+
+   /* 갤러리 영역 */
+   .gallery{padding: 60px 30px}
+   
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   #content{color: #fff;}
+   a, a:link{color: #fff;}
+   .more{border-color: #fff;}
+
+   /* 뉴진스 영역 */
+   .about{padding: 100px 20px 180px ; background:none}
+   .about .box{padding: 0 50px 50px}
+   .about .box img{margin-left: -35%; width: 70%}
+   .about .text{padding: 50% 0 0 15%}
+   .about .tab3{grid-gap:1%}
+  
+
+   /* 앨범 영역*/
+   .album{height: 1200px; background: none;}
+   .album ul{margin: 20px;}
+   .album ul li a{background-size: 40px 42px; top: 22%}
+   .album dl{margin: 11% 0 0 45%}
+   .album dl dd{-webkit-line-clamp: 2}
+
+   /* 컨텐츠 영역 */
+   .contents{padding: 50px 30px 100px;}
+   .contents .img_box{margin: 0 5%}
+   .contents .text_box{margin: 4% 8% 7%}
+   .contents .text_box p{height: auto; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;}
+   .contents .contents_box div:nth-child(5){display: none;}
+   .contents .bottom_line{width: 49%}
+
+   /* rabbit move */
+   .move{margin-top: 35%}
+
+   /* 갤러리 영역 */
+   .gallery_box{grid-template-columns: repeat(2,1fr);
+   
+      grid-template-areas: 
+       'b c'
+       'e e'
+       'd h';
+}
+   .img1{display: none}
+   .img2{grid-area: b;}
+   .img3{grid-area: c;}
+   .img4{grid-area: d;}
+   .img5{grid-area: e;}
+   .img6{display: none}
+   .img7{display: none}
+   .img8{grid-area: h;}
+}
+
+
+

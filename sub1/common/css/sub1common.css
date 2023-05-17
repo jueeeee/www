@@ -1,0 +1,30 @@
+/* sub1 depth의 공통영역 */
+.sub_visual{width: 2000px; position: relative; left: 50%; top: 0;
+        margin-left: -1000px;}
+.sub_visual p{position:absolute; top: 210px; width: 100%; text-align: center;
+    font-family: 'Roboto', sans-serif; font-weight: 200; font-size: 18px; color: #fff;}
+.sub_visual h3{position:absolute; top: 230px; width: 100%; text-align: center;
+        font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 45px; color: #fff;}
+.sub_nav{border-bottom: 1px solid #ccc;}
+.sub_nav ul{width: 1200px; margin: 0 auto; overflow: hidden;}
+.sub_nav li{float: left; width:25%; text-align: center;}
+.sub_nav li a{display: block; padding: 20px 0; color: black;
+        font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 20px;}
+.sub_nav li .current{color:black; font-weight: 700; position: relative;}
+.sub_nav li .current, .sub_nav li a:hover{color:black; font-weight: 700; position: relative;}
+.sub_nav li .current::after{content: ''; display: block; height: 2px; width: 100%; 
+        position: absolute; bottom: 0; left: 0; background: black;}
+#content{width: 1200px; margin: 0 auto;}
+#content .title_area{position: relative; overflow: hidden;}
+#content .title_area .line_map{position: absolute;
+        right:0 ; top: 35px; color:#666; font-size: 1em;
+        font-family: 'Noto Sans KR', sans-serif; font-weight:400;}
+#content .title_area i{font-size: 14px; color:#999}
+#content .title_area h2{font-family: 'Noto Sans KR', sans-serif; font-weight:500; 
+        font-size: 50px; text-align: center; margin:180px 0 100px 0 ;}
+#content .title_area h2::after{content: ''; display: block; background: #666;
+        width: 30px; height: 1px; margin-left: 590px; margin-top: 10px;}
+#content .title_area .p1{font-family: 'Noto Sans KR', sans-serif; font-weight:400;
+        font-size: 30px; text-align: center; margin-top: 25px;} 
+#content .title_area .p2{font-family: 'Noto Sans KR', sans-serif; font-weight:300;
+    font-size: 18px; text-align: center; margin-bottom: 100px; margin-top: 10px;}

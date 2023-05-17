@@ -1,0 +1,11 @@
+/* 공통 */
+#box dt{font-family: 'Noto Sans KR', sans-serif; font-weight:500; 
+    font-size: 1.13em; color:#333; letter-spacing: -.5px; margin: 30px 50px 0;}
+#box dd{font-family: 'Noto Sans KR', sans-serif; font-weight:400; text-align: justify;
+    font-size: 1em; color:#666; letter-spacing: -.5px;
+    line-height: 2em; margin: 50px;}
+#box img{margin-left: 100px;}
+
+
+    
+   

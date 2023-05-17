@@ -1,0 +1,90 @@
+/* 신기술 내용 영역 */
+
+/* green solution */
+#content .menu ul{border:1px solid #ccc; width: 1200px; overflow: hidden;
+    margin-bottom: 80px;}
+#content .menu li{float:left; width: 400px; box-sizing: border-box;
+    text-align: center; padding: 15px;}
+#content .menu li a{font-family: 'Noto Sans KR', sans-serif; font-weight:400;
+    font-size: 18px; color:#666; display: block;}
+#content .menu li:nth-child(1){border-right: 1px solid #ccc;}
+#content .menu li:nth-child(2){border-right: 1px solid #ccc;}
+
+#content .main1, .main3{overflow: hidden;}
+#content .main dl{float: left; width: 600px;}
+#content .main dt{font-family: 'Roboto', sans-serif; font-weight:500; font-size: 40px; 
+    color: #333;}
+#content .main dd span{font-family: 'Noto Sans KR', sans-serif; font-weight:500; font-size: 20px;
+    margin-top: 10px; color:#0c4da2; margin-bottom: 30px; display: block;}
+#content .main dd{font-family: 'Noto Sans KR', sans-serif; font-weight:300; font-size: 16px;
+    margin-top: 10px; padding-right: 120px; text-align: justify; color: #666;}
+#content .background {width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px;
+    background: #f8f8f8; margin-top: 100px; margin-bottom: 100px;}
+#content .main2, .main4 { width: 1200px; margin: 0 auto; overflow: hidden;padding: 100px 0;}
+#content i{font-size: 25px; color:#0c4da2}
+#content .left p{font-family: 'Noto Sans KR', sans-serif; font-weight:500; font-size: 14px; 
+    color: #333; margin-top: 10px;}
+
+#content .main1 dt{margin-top: 60px;}
+#content .main1 .left, .main4 .left{float: left; width: 600px;}
+#content .main2 dl{width: 1200px;}
+#content .main2 dt{margin-top: 0;}
+#content .main2 dd{padding-right: 0;}
+#content .main2 ul {margin-top: 180px;}
+#content .main2 .li1{float: left; margin-left: 65px; width: 500px;}
+#content .main2 .li2{margin-left:665px; width: 500px; }
+#content .main2 li{padding-top: 40px; position: relative;}
+#content .main2 li p{font-family: 'Noto Sans KR', sans-serif; font-weight:500; font-size: 16px; color: #333 
+    ; text-align: left; margin-left: 30px;}
+#content .main2 img{margin-bottom: 20px;}
+#content .main2 i{position: absolute; bottom: 0; left: 0;}
+#content .main2 .img2{padding-top: 70px;}
+#content .main3 dt{margin-top: 100px;}
+#content .left{position: relative;}
+#content .i1{position: absolute; bottom: -100px; left: 0;}
+#content .i2{position: absolute; bottom: -180px; left: 0;}
+#content .i3{position: absolute; bottom: -100px; left: 250px;}
+#content .i4{position: absolute; bottom: -180px; left: 250px;}
+#content .main4 dt{margin-top: 30px;}
+#content .main4 .li1{position: absolute; bottom: -100px; left:0;}
+#content .main4 .li2{position: absolute; bottom: -100px; left:140px;}
+#content .main4 .li3{position: absolute; bottom: -100px; left:260px;}
+#content .main4 .li1 i{margin-left: 15px;}
+#content .main4 .li2 i{margin-left: 7px;}
+#content .main4 .li3 i{margin-left: 19px;}
+
+
+/* digital solution */
+#content .digital_main1{position: relative; margin-bottom: 100px;}
+#content .digital_main1::before{content: ""; display: block; width: 1px;
+    height: 100%; background: #ccc; position: absolute; left: 50%; top :0;}
+#content .digital_img1-1{margin-left: 100px;}
+#content .digital_img1-2{position: relative; top:-120px; left: 0;}
+#content .digital_main1 ul{float: right; text-align: left; margin-top: 50px; margin-right: 120px;}
+#content .digital_main1 li{font-family: 'Roboto', sans-serif; font-weight:300; font-size: 16px;
+    color: #666; margin-top: 15px;}
+#content .digital_main2{overflow: hidden; position: relative; }
+#content .digital_main2 dl{width: 500px; margin-top: 50px;}
+#content .digital_main2 dd{margin-right: 0;}
+#content .digital_img2-1{float: right; }
+#content .digital_main2 ul{margin-top: 270px;}
+#content .digital_main2 li{font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 16px; color: #333 
+    ; text-align: left; margin-top: 10px;}
+#content .digital_main2 li i{font-size: 12px; color: #666; margin-right: 10px ;}
+
+#content .digital_main1:hover .digital_img1-1{transform: scale(1.05) rotate(.001deg);}
+#content .digital_main1 .digital_img1-1{transform: scale(1); transition: all .5s ease;}
+#content .digital_main2:hover .digital_img2-1{transform: scale(1.05) rotate(.001deg); }
+#content .digital_main2 .digital_img2-1{transform: scale(1); transition: all .5s ease;}
+
+
+
+
+/* hover */
+#content .main1:hover .left div{animation:motion 0.3s linear 0s 10 alternate;
+    margin-top:0;}
+
+@keyframes motion {
+    0%{margin-top: 0px;}
+    100%{margin-bottom: 10px;}   
+}

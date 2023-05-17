@@ -1,0 +1,19 @@
+/* ESD */
+#content .esd dt{font-family: 'Noto Sans KR', sans-serif; font-weight:500; font-size: 27px;
+    color:#333; margin-top: 40px; text-align: center;}
+#content .esd dd{font-family: 'Noto Sans KR', sans-serif; font-weight:300; font-size: 18px;
+    color:#666; margin-top: 30px; text-align: center;}
+
+/* LNG VALUE CHAIN */
+#content .lng ul{position: relative;}
+#content .lng li{position: relative; list-style: none; margin-top: 50px;}
+#content .lng li img{margin-left: 100px;}
+#content .lng dl{width:600px; float: right; position: absolute; top:50px;
+    right: 0; }
+#content .lng dt{font-family: 'Roboto', sans-serif; font-weight: 500;
+    font-size: 32px; color: #333;}
+#content .lng dt span{display: block; font-size: 18px; margin-top: 10px;
+    color: #666;}
+#content .lng dd{font-family: 'Roboto', sans-serif; font-weight: 400;
+    font-size: 18px; color: #333; margin-top: 40px; text-align: justify;
+    margin-right: 100px;}

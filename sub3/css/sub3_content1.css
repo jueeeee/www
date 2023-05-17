@@ -1,0 +1,60 @@
+/* 신공법 내용 영역 */
+
+/* 공통영역 */
+#content section{position: relative; margin-top: 10px;}
+#content h3{font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 40px; 
+    color: #333; transform: scale(1); transition: all .5s ease;}
+#content section:hover h3{transform: scale(1.1);}
+#content h3::before{font-family: 'Noto Sans KR', sans-serif; font-weight: 500; 
+    font-size: 20px; color: #999;}
+#content h3::after {content: ''; display: block; width: 1px; height: 100px;
+    background: #999;}
+#content img{transform: scale(1); transition: all .5s ease;}
+#content section:hover img{transform: scale(.95);}
+#content .img_right{position:relative; bottom:70px; left:350px;}
+#content .img_left{position:relative; bottom:70px; right:150px;}
+#content .title_box{width: 700px; height: 110px; 
+    background: linear-gradient(135deg, rgba(0,36,119,1) 0%, rgba(0,87,147,1) 100%);
+    position: relative; bottom: 250px; left: -150px; margin-bottom: -120px;}
+#content .title_box p{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; 
+    font-size: 25px; color: #f1f1f1; position: absolute; top: 40px; left: 150px;}
+#content .title_box a{font-size: 23px; color: #fff; font-weight: 300;
+    opacity: .2; transition: all .5s ease;}
+#content .title_box a:hover{opacity: 1;}
+#content .title_box .left{position: absolute; bottom: 42px; right: 130px;}
+#content .title_box .right{position: absolute; bottom: 42px; right: 80px;}
+
+#content .text_box{margin-bottom: 200px; }
+#content .text_box dt{font-family: 'Noto Sans KR', sans-serif; font-weight: 500;
+    font-size: 25px; color: #333;}
+#content .text_box dd{font-family: 'Noto Sans KR', sans-serif; font-weight: 400;
+    font-size: 18px; color: #666; margin-top: 20px; text-align: justify;
+    line-height: 1.5em;} 
+
+/* 공법최적화 */
+#content .main1 h3{position:relative; top:100px; left: 0px; text-align: center; width: 200px;}
+#content .main1 h3::before{content: 'Optimization'; position:absolute; 
+    bottom:60px; left: 40px;}
+#content .main1 h3::after {content: ''; display: block; 
+    position:absolute; top:100px; left: 100px;}
+
+/* 자동화 */
+#content .main2 h3{position:relative; top:120px; left: 900px;}
+#content .main2 h3::before{content: 'Automation'; position:relative; 
+    bottom:60px; left: 110px;}
+#content .main2 h3::after {content: ''; display: block; 
+    position:absolute; top:100px; left: 170px;}
+#content .main2 .title_box{ position: relative; bottom: 250px; 
+    left: 650px; margin-bottom: -120px;}
+#content .main2 .title_box p{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; 
+    font-size: 25px; color: #f1f1f1; position: absolute; top: 36px; left: 80px;}
+#content .main2 .title_box .left{position: absolute; bottom: 42px; right: 200px;}
+#content .main2 .title_box .right{position: absolute; bottom: 42px; right: 150px;}
+
+/* 스마트 야드 */
+#content .main3 h3{position:relative; top:100px; left: -100px; text-align: center;
+    width: 400px;}
+#content .main3 h3::before{content: 'Digital Transformation'; 
+    position:absolute; bottom:60px; left: 90px;}
+#content .main3 h3::after {content: ''; display: block; 
+    position:absolute; top:100px; left: 200px;}

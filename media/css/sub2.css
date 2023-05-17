@@ -1,0 +1,70 @@
+.videoBox h2{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); font-family: 'looks_happy'; font-size: 5em; color: #fff;}
+#imgBG{display: block;}
+#content{position: relative; color: #fff; width: 100%; background: rgba(0,0,0,.7); padding: 5% 0}
+#content h3{font-family: 'looks_happy_fill'; font-size: 2.5em}
+
+/* ALBUM */
+@keyframes rotation {
+  100% {transform: rotate(360deg);}
+}
+
+section{padding: 8% 10% 0;}
+section:nth-of-type(1){padding-top: 0;}
+section .playerWrap{margin-top: 5%; display: grid; grid-template-columns: repeat(5,1fr);
+
+  grid-template-areas: 
+    'a a b b b';}
+
+section .playerImg{grid-area: a; display: block}
+section .playerImg img {width: 90%; transition: all .2s; }
+section .playerImg img.current{animation: rotation 6s linear infinite; border-radius: 50%;}
+
+section .info{grid-area: b; display: block; margin: auto 0 auto 5%; position: relative}
+section .info dt{margin-bottom: 5%; font-size: 1.8em; font-weight: 500}
+section .info p{white-space: pre-line}
+section .info span{margin-right: 18px}
+section .info ol{margin:4% 0 0 5%;}
+section .info ol li{position: relative;}
+section .info ol li::before{content: '01'; display: block; position: absolute; top:0; left: -5%; font-size: .9em;}
+section .info ol li:nth-child(2)::before{content: '02';}
+section .info ol li:nth-child(3)::before{content: '03';}
+section .info ol li:nth-child(4)::before{content: '04';}
+
+section .info .audio_control{position: absolute; display: block; bottom: 0; right: 16%}
+section .info .audio_control .playerControler{display: flex; z-index: 1;}
+section .info .audio_control .playerControler .fa-solid{font-size: 1.3em; color: #fff; background:none; margin-left: 50%; cursor: pointer;}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+  #content{font-size: 16px;}
+  section{padding: 10% 10% 0;}
+  section:nth-of-type(1){padding-top: 3%;}
+  section:nth-of-type(3){padding-bottom: 8%;}
+}
+
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+  #content{font-size: 14px;}
+
+  section{padding: 9% 5%;}
+  section:nth-of-type(1){padding-top: 5%;}
+  section .playerWrap{margin-top: 7%;}
+  section .info dd{letter-spacing: .05em;}
+}
+
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+  #content h3{text-align: center;}
+
+  section .playerWrap{display: block;}
+  section .playerImg img{width: 60%; display: block; margin: 0 auto;}
+  section .info{margin: 8% auto 0; width: 90%;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  section .info dl, p{text-align: center;}
+  section .info ol{margin: 7% 0 0 20%;}
+  section .info .audio_control{right: 30%;}
+
+}

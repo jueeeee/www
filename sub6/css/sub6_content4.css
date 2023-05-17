@@ -1,0 +1,32 @@
+#content #contactForm{
+    padding: 30px 100px;}
+
+#content .row{
+    margin-bottom: 30px;}
+
+#content label{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    }
+
+#content input, #message{
+    float: right;
+    width: 800px;
+    padding: 15px;}
+
+#content button{
+    margin-top: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    padding: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    border: 1px solid #666;}
+
+#content button:hover{
+    border: 1px solid #0c4da2;
+    color: #0c4da2;
+    font-weight: 400;}

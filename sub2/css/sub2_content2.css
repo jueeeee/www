@@ -1,0 +1,46 @@
+/* 해양사업 내용 영역 */
+
+/* pop_menu */
+#content .info p{border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;
+    padding: 30px; text-align: center; font-family: 'Noto Sans KR', sans-serif; font-weight:400; 
+    font-size: 18px; color: #333;}
+#content .pop_menu {margin-top: 100px; overflow: hidden;}
+#content .pop_menu li{float: left; height: 420px; margin-bottom: 50px; position: relative;}
+#content .pop_menu li img{transform: scale(1); transition: all .5s ease-out;}
+#content .pop_menu li:hover img{transform: scale(1.05) rotate(.001deg);}
+#content .pop_menu .right{margin-left: 40px;}
+#content .pop_menu dl{margin-top: 30px; margin-left: 20px;}
+#content .pop_menu dt{font-family: 'Roboto', sans-serif; font-size: 23px; color: #333;
+    font-weight: 400; margin-bottom: 8px;}
+#content .pop_menu dd{ font-family: 'Noto Sans KR', sans-serif; 
+    font-weight:300; color: #333; font-size: 15px;}
+#content .pop_menu dt{ font-family: 'Noto Sans KR', sans-serif; 
+    font-weight:400; color: #333; font-size: 23px;}
+#content .pop_menu .more{position: absolute; bottom: 10px; right: 10px;}
+#content .pop_menu i{font-size: 14px; color: #999;}
+#content .pop_menu .more span{font-family: 'Noto Sans KR', sans-serif; 
+    font-weight:400; color: #333; font-size: 14px;}
+
+/* popup */
+#content .main .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+#content .main .popup{position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -600px; 
+    width: 1200px; height: 590px; background: #fff; box-shadow: 1px 3px 7px 0px #666;
+    z-index: 60; display:none; overflow: hidden;}
+#content .main .popup img{width: 580px; margin:80px 80px 20px; float: left;}
+#content .main .popup .title_box{width: 380px; float: right; margin:145px 80px 0 0;}
+#content .main .popup strong{font-family: 'Noto Sans KR', sans-serif; 
+font-weight:500; color: #333; font-size: 2.7em;}
+#content .main .popup span{font-family: 'Noto Sans KR', sans-serif; 
+font-weight:300; color: #999; font-size: 1.125rem; display: block; margin-bottom: 10px;}
+#content .main .popup p{font-family: 'Noto Sans KR', sans-serif; 
+font-weight:400; color: #666; font-size: 1.1em; margin-top: 20px;
+line-height: 1.7em; letter-spacing: .01em;}
+#content .main .popup .close_btn{position: absolute; top: 40px; right: 40px; 
+display: block; text-indent: -999px; overflow: hidden; width: 40px; 
+height: 40px; background: url(../images/content2/close.jpg) no-repeat;
+background-size: 100% auto;}
+#content .main .popup .text_box{float: left; margin: 0 60px;}
+#content .main .popup .text_box p{font-family: 'Noto Sans KR', sans-serif; 
+font-weight:300; color: #666; font-size: 1em;
+line-height: 1.8em; letter-spacing: .03em;}

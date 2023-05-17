@@ -1,0 +1,73 @@
+/* 공통 */
+#content{font-family: 'Noto Sans KR', sans-serif;}
+#content .content_area{height: 2222px; overflow: hidden;}
+
+/* 탭메뉴 */
+#content .tab_menu ul{border:1px solid #ccc; overflow: hidden;}
+#content .tab_menu li{float: left; width:50%; box-sizing: border-box; text-align: center;
+                      transition: all .5s ease;}
+#content .tab_menu li:nth-child(1){border-right: 1px solid #ccc;}
+#content .tab_menu li:hover{background: #f8f8f8;}
+#content .tab_menu li:hover a{color:#0c4da2; font-weight: 500;}
+#content .t
+#content .tab_menu li a{font-weight:400; font-size: 1.2em; color:#666; display: block; padding: 15px;}
+
+
+/* 경영이념 INTRO */
+#content .intro{padding: 50px; border-bottom: 1px solid #ccc;}
+#content .intro h3{ font-weight:500;
+    font-size: 40px;}
+#content .intro p{ font-weight:300;
+    font-size: 20px; margin-top: 10px;}
+
+/* 경영이념 MAIN */
+#content .main1 {margin-top: 60px;}
+#content .main1 .num{font-weight:500;
+    font-size: 100px; color:#ccc; display: block;}
+#content .main1 .tit{font-weight:500;
+    font-size: 30px; color:#333}
+#content .main1 dd{ font-weight:400;
+    font-size: 16px; color:#666}
+#content .main1 li{overflow: hidden;}
+#content .main1 dl{margin-top: 80px;}
+#content .main1 .dl_left{width: 600px; float: left;}
+#content .main1 .dl_left dd{margin-right: 230px; text-align: justify;}
+#content .main1 .dl_right{width: 600px; float: right;}
+#content .main1 .dl_right dt{text-align: right; margin-left: 230px;}
+#content .main1 .dl_right dd{ margin-left: 160px; text-align: right;}
+
+
+#content .main2{overflow: hidden; margin-left: 100px;}
+#content .main2 dl{width: 500px;margin-top: 50px; position: relative;}
+#content .main2 .dl1::before {content: ''; display: block; width: 5px; height: 50px; background:#ccc;
+    position: absolute; left:0px; top:10px;}
+#content .main2 .dl3::before {content: ''; display: block; width: 5px; height: 50px; background:#ccc;
+    position: absolute; left:0px; top:10px;}
+#content .main2 .dl5::before {content: ''; display: block; width: 5px; height: 50px; background:#ccc;
+    position: absolute; left:0px; top:10px;}
+#content .main2 .dl2::before {content: ''; display: block; width: 5px; height: 50px; background:#ccc;
+    position: absolute; left:-30px; top:10px;}
+#content .main2 .dl4::before {content: ''; display: block; width: 5px; height: 50px; background:#ccc;
+    position: absolute; left:-30px; top:10px;}
+#content .main2 .dl6::before {content: ''; display: block; width: 5px; height: 50px; background:#ccc;
+    position: absolute; left:-30px; top:10px;}
+#content .main2 .dl1, .dl3, .dl5{float:left;}
+#content .main2 .dl2, .dl4, .dl6{float: right;}
+#content .main2 .clear{clear: both;}
+#content .main2 .dl1 dt, .main2 .dl1 dd{margin-left: 30px;}
+#content .main2 .dl3 dt, .main2 .dl3 dd{margin-left: 30px;}
+#content .main2 .dl5 dt, .main2 .dl5 dd{margin-left: 30px;}
+#content .main2 dt{font-weight:500;
+    font-size: 25px; color:#333}
+#content .main2 dd{ font-weight:400;
+    font-size: 16px; color:#666; margin-right: 200px;}
+
+/* SCROLL */
+.main, .inner{visibility: hidden;}
+.fadeInDown, .fadeInLeft, .fadeInRight, .fadeInUp , .slideInLeft, .rollIn{ visibility: visible; }
+.delay-01s { animation-delay: 0.1s;}
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-05s { animation-delay: 0.5s;}
+.delay-06s { animation-delay: 0.6s;}  

@@ -1,0 +1,22 @@
+/* 찾아오시는 길 */
+
+#content .content_area{height: 1200px; overflow: hidden;}
+
+#content .tab_menu ul{border:1px solid #ccc; overflow: hidden; margin-bottom: 100px;}
+#content .tab_menu li{float:left; width: 33.3%; box-sizing: border-box;}
+#content .tab_menu li:hover{background: #f8f8f8;}
+#content .tab_menu li:hover a{color:#0c4da2; font-weight: 500;}
+#content .tab_menu li a{font-family: 'Noto Sans KR', sans-serif; font-weight:400;font-size: 18px; color:#666; display: block; padding: 15px; text-align: center; }
+#content .tab_menu li:nth-child(1){border-right: 1px solid #ccc;}
+#content .tab_menu li:nth-child(2){border-right: 1px solid #ccc;}
+#content  #map_content1, #map_content2, #map_content3{width: 1200px; height: 600px;}
+
+#content .main ul{padding:50px; overflow: hidden;}
+#content .main li{padding: 12px;}
+#content .main .tell{float: left; margin-right: 50px;}
+#content .main i{font-size: 20px; color:#333;}
+#content .main span{font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 16px; color: #666;}
+#content .main strong{font-size: 20px; font-weight: 500; color:#333;}
+
+#content .main .info2 {border-top:1px solid #ccc;}
+#content .main .info2 .bus1{background:green; font-weight: 800; color: #fff; font-size: 14px;}

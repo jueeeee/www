@@ -1,0 +1,15 @@
+{
+    "list" : [
+        
+        {"Title":"해양 엔지니어링", "Sub":"성능과 안전은 무엇보다도 우선되어야 합니다. 이를 위해 삼성중공업은 Process, Safety, 진동소음 등 핵심 엔지니어링을 자체수행하고 기술선도 함으로써 기존 제품에 대한 성능/안전을 세계 최고 수준으로 유지할 뿐만 아니라 새로운 Concept 제품을 실현해 오고 있습니다. 삼성중공업에서 수주한 FLNG, FPSO, FSRU, FSO 등 다양한 선종에 대한 엔지니어링 혁신은 지금도 지속적으로 진행되고 있습니다.", "Image":"./images/content2/engine1.jpg"},
+        {"Title":"해양 프로젝트 재료 엔지니어링", "Sub":"기존 해양플랜트 재료 엔지니어링 기술은 해외 의존도가 높아 프로젝트 수행의 리스크가 높았습니다. 이에 삼성중공업은 자체 재료 검증 및 재료 선정 프로세스를 독자 개발함으로써 프로젝트 수행 리스크를 완화하고, 기술 자립화를 통해 해양 엔지니어링 설계 기술 경쟁력을 확보했습니다.", "Image":"./images/content2/engine2.jpg"},
+        {"Title":"Topside Package", "Sub":"'해양생산설비에 대한 엔지니어링 자립화 및 강화를 위해 전처리 공정(Pre-treatment Process)에 해당되는 Separator, Acid Gas Removal Unit, Dehydration Unit, MEG Regeneration Unit을 파일럿으로 제작하여 운영중에 있습니다. 이를 통해 당사는 해양생산설비 설계 결과를 검증하고 향후 발주되는 해양생산설비 수주에 적극적으로 활용하고 있습니다.", "Image":"./images/content2/engine3.jpg"},
+        {"Title":"배관응력해석 자동화시스템(OPAAS)", "Sub":"삼성중공업은 반복 해석 및 재해석 작업의 효율화를 위해 배관응력해석 자동화 시스템(OPAAS, Optimized Piping Analysis Automation System)을 개발해 응력해석 시수를 단축하고 배관의 응력을 저감시키는 성과를 달성했습니다.", "Image":"./images/content2/engine4.jpg"},
+        {"Title":"DP/PMS/SPT HILS", "Sub":"선박·해양플랜트에 탑재되는 시스템이 복잡해짐에 따라, 제어 시스템의 중요성이 대두되고 있습니다. 삼성중공업은 다양한 시스템에 대한HILS(Hardware In the Loop Simulation)기술을 적용, 가상 시뮬레이션을 통한 제어시스템 검증을 수행하여 선박·해양플랜트의 신뢰성과 가용성을 높이고 시운전 중의 리스크와 비용 등을 최소화 하였습니다. 특히, 국내 중소기업과의 기술협력을 통해 국내최초로 동적 위치제어 시스템, 전원 관리 시스템HIL을, 세계 최초로 국내 기술만으로 실선 적용하여 DNV-GL 인증을 완료하였습니다.", "Image":"./images/content2/engine5.jpg"},
+        {"Title":"Engineering Data Change Management", "Sub":"프로젝트 전 과정에서 생성되는 정보를 일괄적으로 관리하는 시스템을 구축했습니다. 이를 통해 데이터 정합성이 향상되고, 변경 정보에 대한 효율적 관리가 가능합니다. 또한 프로젝트 운영 관리를 위한 Handover 데이터를 자동으로 생성해 Handover를 위한 부가적 업무를 획기적으로 절감할 수 있습니다.", "Image":"./images/content2/engine6.jpg"},
+        {"Title":"Safety Study", "Sub":"삼성중공업은 안전을 최고의 경영 가치로 생각하고 있으며 이를 위해 제품의 Concept 단계부터 안전한 시스템 및 운전환경을 만들고자 국제 표준에 부합하는 다양한 Safety Study를 설계 단계 별로 진행하고 있습니다. 특히 화재, 폭발, 인명탈출 등에 대한 Safety Study 전문 인력 및 시스템을 확보하고 있으며 국내외 전문기관과 지속적인 기술개발을 함으로써 Safety 기술 발전을 선도하고 있습니다.", "Image":"./images/content2/engine7.jpg"},
+        {"Title":"HVAC 엔지니어링", "Sub":"다수의 해양 프로젝트 수행에 따라 HVAC(Heating, Ventilating, and Air Conditioning) 시스템 설계시 기본설계부터 상세설계까지 통합검토 가능한 신뢰성 높은 통합 엔지니어링 기술의 필요성이 제기됨에 따라 엔지니어링 노하우를 반영한 독자 HVAC 엔지니어링 시스템을 구축하였습니다. 독자 시스템을 적용함에 따라 정확도 높은 시스템 설계가 가능해졌으며, HVAC 시스템에 문제나 추가 요구사항 발생시 신속한 대응으로 고객 신뢰도 제고에 큰 기여를 하고 있습니다.", "Image":"./images/content2/engine8.jpg"}
+    ]
+
+    
+}
